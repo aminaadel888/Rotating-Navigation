@@ -1,0 +1,118 @@
+
+body{
+    margin: 0;
+    background-color: rgb(76, 76, 76);
+    overflow-x: hidden;
+
+}
+
+h1{
+    font-family: "Courier New", monospace;
+}
+h1,h5{
+    margin: 0;
+}
+
+#container{
+    background-color: white;
+    width: 100%;
+    padding: 40px;
+    transform-origin: top left;
+    transition: transform 0.5s ease-in;
+
+}
+
+.content{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+
+}
+
+.images{
+text-align: center;
+
+}
+img{
+    width: 50vw;
+}
+#circle-container{
+    position: fixed;
+    background-color: rgb(186, 46, 46);
+    border-radius: 50%;
+    top:-110px;
+    left:-110px;
+    transition: transform 0.5s ease-in;
+
+}
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+#close,#open{
+    position: absolute;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    color: white;
+    top: 70%;
+    left: 70%;
+ 
+}
+#close{
+    left:15%;
+    top:68%;
+
+}
+#close:hover,#open:hover{
+    color: black;
+}
+
+
+.rotate{
+    transform: rotate(-20deg);
+}
+.rotate-circle{
+    transform: rotate(-80deg);
+}
+#container.rotate + nav ul li{
+    transform: translatex(0);
+    transition: transform 0.5s ease-in;
+}
+
+nav{
+    position: fixed;
+    bottom: 50px;
+
+}
+nav ul{
+    list-style: none;
+    padding-left: 30px;
+}
+nav ul li{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font: bold;
+    
+    color: white;
+    transform: translatex(-150px);
+    transition: transform 0.5s ease-in;
+
+}
+nav ul li +li {
+    padding-left: 10px;
+}
+nav ul li +li+li {
+    padding-left: 20px;
+}
+nav ul li:hover{
+    color: rgb(186, 46, 46);
+    font-size: 20px;
+    
+}
+nav ul li i{
+    padding-right: 5px;
+}
+
